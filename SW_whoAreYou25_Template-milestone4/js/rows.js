@@ -158,6 +158,7 @@ export let setupRows = function (game) {
 
         resetInput();
 
+        console.log(game.guesses.length)
          if (gameEnded(playerId)) {
             // updateStats(game.guesses.length);
 
@@ -165,7 +166,7 @@ export let setupRows = function (game) {
                 success();
             }
 
-            if (game.guesses.length == 8) {
+            else if (game.guesses.length == 8) {
                 gameOver();
             }
          }
