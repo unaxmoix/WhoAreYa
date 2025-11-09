@@ -76,7 +76,7 @@ adow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full s
     blocks += `<div class="mt-2 justify-center items-center space-x-2 dark:text-white">
                     <div>
                         <h5>New footballer:</h5>
-                        <span class="text-lg font-medium text-gray-900 dark:text-gray-100" id="nextPlayer">b</span>
+                        <span class="text-lg font-medium text-gray-900 dark:text-gray-100" id="nextPlayer"></span>
                     </div>
                    <!-- <button type="button" class="rounded-md border border-transparent shadow-sm px-4 pt-1 pb-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm" tabindex="0"><span class="block text-2xl tracking-wide font-bold leading-7">Share</span>
                    <span class="block text-xs tracking-tight font-light">#HashTag</span></button> -->
