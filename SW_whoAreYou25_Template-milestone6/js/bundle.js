@@ -462,7 +462,7 @@ const leaguesId = {"564": "es1", "8": "en1", "82": "de1", "384": "it1", "301": "
 
 let setupRows = function (game) {
 
-
+    let interval
     let [state, updateState] = initState('WAYgameState', game.solution.id)
 
 
@@ -547,6 +547,7 @@ let setupRows = function (game) {
 
     function bindClose() {
         document.getElementById("closedialog").onclick = function () {
+            clearInterval(interval)
             document.body.removeChild(document.body.lastChild)
             document.getElementById("mistery").classList.remove("hue-rotate-180", "blur")
         }
@@ -611,6 +612,11 @@ let setupRows = function (game) {
         else return false
     }
 
+    function deituInterval(){
+        setTimeout(()=>{
+            interval = setInterval(timeToNewPlayer,"1000")
+        }, "3000")
+    }
     function timeToNewPlayer(){
         const nextPlayer = document.getElementById("nextPlayer");
         
@@ -655,7 +661,7 @@ let setupRows = function (game) {
                 updateStats(9);
                 gameOver();
             }
-                  setTimeout(()=>setInterval(timeToNewPlayer,"1000"), "3000")
+            deituInterval()
 
 
          }
